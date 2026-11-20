@@ -1,0 +1,12 @@
+replicaCount: 3
+
+image:
+  repository: 501634099654.dkr.ecr.ap-southeast-2.amazonaws.com/payment-app
+  pullPolicy: IfNotPresent
+  tag: "v1"
+
+imagePullSecrets:
+  - name: ecr-secret
+
+ingress:
+  enabled: false
